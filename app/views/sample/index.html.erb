@@ -21,4 +21,19 @@
       </div>
     </div>
   </div>
+
+    <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">number1</label>
+    <input type="number" class="form-control" @number1.id placeholder="number1">
+    </div>
+    <div class="mb-3">
+    <label for="number2" class="form-label">number2</label>
+    <input type="number" class="form-control" id="number2" placeholder="number2">
+    </div>
+
+  <%= form_with model: @hoge do |f| %>
+     <%= f.select :faculty, [["加算", "加算"], ["減算", "減算"], ["乗算", "乗算"], ["除算", "除算"]], include_blank: "選択して下さい" %>
+     <%= f.submit '送信'%>
+  <% end %>
+
 </header>
