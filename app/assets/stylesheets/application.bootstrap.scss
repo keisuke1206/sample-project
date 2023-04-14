@@ -1,5 +1,6 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
 
-*require_tree .
-*= require_self
+
+@import 'top_page';
+@import 'css1.css';
